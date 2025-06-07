@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+  int r=0,s=0,n=0,m=0,i=0;
+  printf("enter a decimal value:\n");
+  scanf("%d",&n);
+  m=n;
+  while(m!=0)
+  {
+    r=(m%2)*pow(10,i);
+    s=s+r;
+    m=m/2;
+    i++;
+  }
+  printf("binary:0%d\n",s);
+  m=n;
+  i=0;
+  s=0;
+  while(m!=0)
+  {
+    r=(m%8)*(pow(10,i));
+    s=s+r;
+    m=m/8;
+    i++;
+  }
+  printf("octal:o%d\n",s);
+  s=0;
+  m=n;
+  char set[10];
+  for(i=0;m!=0;i++)
+  {
+    r=m%16;
+    if(r<10)
+    {
+      set[i]=(48+r);
+    }
+    else
+    {
+      set[i]=(55+r);
+    }
+    m=m/16;
+  }
+  printf("hexadecimal:0x");
+  for(;i>=0;i--)
+  {
+    printf("%c",set[i]);
+  }
+}
