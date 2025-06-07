@@ -1,2 +1,2 @@
-# C-Programming-101
-A comprehensive collection of basic C programming codes, along with some advanced data structures implementation.
+# C Programs - A comprehensive collection
+A comprehensive collection of basic C code files, along with some advanced data structures implementation.
